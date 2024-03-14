@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880504731180",
+    "project_id": "beerapp-f3dad",
+    "storage_bucket": "beerapp-f3dad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880504731180:android:4dc93f6d70bf1d1fad0389",
+        "android_client_info": {
+          "package_name": "com.example.teeeemj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY0V9LZq_YJEzuRhKErQ5EBWHhCQxh5Qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
