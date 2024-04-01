@@ -225,7 +225,7 @@ class _HomePageState extends State<HomePage> {
                       );
                     } else if (state is BeerErrorState) {
                       return (Center(
-                        child: Text(state.error),
+                        child: Text('${state.error.characters}'),
                       ));
                     }
                     return Center(

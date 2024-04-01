@@ -31,7 +31,9 @@ class SignInPage extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              context.router.push(SignUpRoute());
+            },
             child: const Text(
               'Register',
               style: TextStyle(

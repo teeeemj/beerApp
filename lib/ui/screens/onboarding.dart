@@ -78,7 +78,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                    const SizedBox(height: 30),
+                    const SizedBox(height: 10),
                     const Text(
                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                       style: TextStyle(
@@ -87,24 +87,28 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                         color: Colors.black,
                       ),
                     ),
-                    const SizedBox(height: 30),
+                    const SizedBox(height: 10),
                     Row(
                       children: [
-                        AuthButton(
-                          onPressed: () {
-                            context.router.push(const SignInRoute());
-                          },
-                          title: 'Sign In',
+                        Expanded(
+                          child: AuthButton(
+                            onPressed: () {
+                              context.router.push(const SignInRoute());
+                            },
+                            title: 'Sign In',
+                          ),
                         ),
                         const SizedBox(width: 40),
-                        AuthButton(
-                          onPressed: () {
-                            context.router.push(SignUpRoute());
-                          },
-                          title: 'Sign Up',
+                        Expanded(
+                          child: AuthButton(
+                            onPressed: () {
+                              context.router.push(SignUpRoute());
+                            },
+                            title: 'Sign Up',
+                          ),
                         )
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),

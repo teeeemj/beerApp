@@ -30,7 +30,9 @@ class SignUpPage extends StatelessWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              context.router.push(const SignInRoute());
+            },
             child: const Text(
               'Login',
               style: TextStyle(
@@ -93,11 +95,6 @@ class SignUpPage extends StatelessWidget {
                     const SizedBox(height: 30),
                     AuthTextfield(
                       hintText: 'Password',
-                      controller: controllerPassword,
-                    ),
-                    const SizedBox(height: 30),
-                    AuthTextfield(
-                      hintText: 'Repeat Password',
                       controller: controllerPassword,
                     ),
                     const SizedBox(height: 30),
